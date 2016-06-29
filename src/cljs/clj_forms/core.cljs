@@ -27,7 +27,7 @@
 
 (defn weight-form
   [weight-atom]
-  (input-and-prompt "Weight(lbs):" "weight" "number" weight-atom [prompt-message "What's your weight?"]))
+  (input-and-prompt "Weight(lbs):" "weight" "number" weight-atom [prompt-message "Enter your weight?"]))
 
 (defn home-page []
   (let [weight (atom nil)]
