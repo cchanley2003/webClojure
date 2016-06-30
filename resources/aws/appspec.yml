@@ -4,6 +4,9 @@ files:
   - source: target/clj_forms.jar
     destination: /var/clojure/
 hooks:
+  ApplicationStop:
+    - locaiton: run/killApp.sh
+    -runas: root
   ApplicationStart:
     - location: run/runApp.sh 
       runas: root
