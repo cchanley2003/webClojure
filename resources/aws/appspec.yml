@@ -1,1 +1,9 @@
-
+version: 0.0
+os: linux
+files:
+  - source: target/clj_forms.jar
+    destination: /var/clojure/
+hooks:
+  ApplicationStart:
+    - location: java -jar /var/clojure/clj_forms.jar
+      runas: root
