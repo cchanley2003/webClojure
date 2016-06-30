@@ -5,7 +5,7 @@ files:
     destination: /var/clojure/
 hooks:
   ApplicationStop:
-    - locaiton: run/killApp.sh
+    - location: run/killApp.sh
       runas: root
   ApplicationStart:
     - location: run/runApp.sh 
