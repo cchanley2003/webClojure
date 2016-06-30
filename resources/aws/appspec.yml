@@ -5,5 +5,5 @@ files:
     destination: /var/clojure/
 hooks:
   ApplicationStart:
-    - location: java -jar /var/clojure/clj_forms.jar
+    - location: run/runApp.sh 
       runas: root
