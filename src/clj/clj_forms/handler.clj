@@ -1,9 +1,12 @@
 (ns clj-forms.handler
-  (:require [compojure.core :refer [GET defroutes]]
-            [compojure.route :refer [not-found resources]]
-            [hiccup.page :refer [include-js include-css html5]]
-            [clj_forms.middleware :refer [wrap-middleware]]
-            [config.core :refer [env]]))
+  (:require
+    [compojure.core :refer [GET defroutes routes POST]]
+    [compojure.route :refer [not-found resources]]
+    [hiccup.page :refer [include-js include-css html5]]
+    [ring.middleware.json :refer [wrap-json-response]]
+    [ring.middleware.defaults :refer [wrap-defaults api-defaults]]
+    [config.core :refer [env]]
+    [clojure.tools.logging :as log]))
 
 (def mount-target
   [:div#app
@@ -13,6 +16,7 @@
        " in order to start the compiler"]])
 
 (defn head []
+      (log/info "Loading head!")
   [:head
    [:meta {:charset "utf-8"}]
    [:meta {:name "viewport"
@@ -27,11 +31,14 @@
      (include-js "/js/app.js")]))
 
 
-(defroutes routes
-  (GET "/" [] loading-page)
-  (GET "/about" [] loading-page)
+
+
+(defroutes site-routes
+           (GET "/" [] loading-page)
+           (GET "/about" [] loading-page)
+           (POST "/addWeight" {body :body} (println (slurp body)))
   
   (resources "/")
   (not-found "Not Found"))
 
-(def app (wrap-middleware #'routes))
+(def app (routes (wrap-defaults site-routes api-defaults)))

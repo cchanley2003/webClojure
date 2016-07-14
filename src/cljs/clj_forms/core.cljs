@@ -2,7 +2,8 @@
     (:require [reagent.core :as reagent :refer [atom]]
               [reagent.session :as session]
               [secretary.core :as secretary :include-macros true]
-              [accountant.core :as accountant]))
+              [accountant.core :as accountant]
+              [ajax.core :refer [GET POST]]))
 
 ;; -------------------------
 ;; Views
@@ -15,32 +16,50 @@
     [:div {:class "prompt message-animation"} [:p message]]])
 
 
-(defn input-and-prompt
+(defn input
   "Creates an input box and a prompt box that appears above the input when the input comes into focus."
-  [label-value input-name input-type input-element-arg prompt-element]
+  [label-value input-name input-type input-element-arg]
   (let [input-focus (atom false)]
     (fn []
       [:div
        [:label label-value]
-       (if @input-focus prompt-element [:div])
        [input-element input-name input-name input-type input-element-arg input-focus]])))
 
 (defn weight-form
   [weight-atom]
-  (input-and-prompt "Weight(lbs):" "weight" "number" weight-atom [prompt-message "Enter your weight?"]))
+  (input "Weight (lbs):" "weight" "number" weight-atom))
+
+
+(defn handler [response]
+      (.log js/console (str response)))
+
+(defn error-handler [{:keys [status status-text]}]
+      (.log js/console (str "something bad happened: " status " " status-text)))
+
+(defn  submitWeight! [w]
+       (.log js/console w)
+       (POST "/addWeight"
+                               {:params
+                                        {:message "Hello World!"
+                                         :user    "Bob"
+                                         :weight w}
+                                :format :json
+       :handler handler
+       :error-handler error-handler}))
 
 (defn home-page []
   (let [weight (atom nil)]
     (fn []
-      [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Weight App"]
+      [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Weight Measurement App"]
       [:form 
         [weight-form weight]
-        [:input {:type "submit" :value "Submit"}]
+        [:input {:type "button" :value "Submit!" :on-click #(submitWeight! @weight)}]
       ]
        [:div "Weight is: " @weight]])))
 
 (defn current-page []
   [:div [(session/get :current-page)]])
+
 
 (defn input-element
   "An input element which updates its value on change"
@@ -60,6 +79,9 @@
 
 (secretary/defroute "/" []
   (session/put! :current-page #'home-page))
+
+(secretary/defroute "/about" []
+                    (session/put! :current-page #'home-page))
 
 ;; -------------------------
 ;; Initialize app

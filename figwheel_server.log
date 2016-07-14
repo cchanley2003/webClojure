@@ -1,0 +1,270 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+WARNING: Wrong number of args (3) passed to clj-forms.core/input at line 29 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.323 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.21 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.209 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.21 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.211 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.227 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 25 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.237 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.223 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mclojure.lang.ExceptionInfo: Invalid token: :
+ at clojure.core$ex_info.invokeStatic (core.clj:4617)
+    clojure.core$ex_info.invoke (core.clj:4617)
+    clojure.tools.reader.reader_types$reader_error.invokeStatic (reader_types.clj:391)
+    clojure.tools.reader.reader_types$reader_error.doInvoke (reader_types.clj:387)
+    clojure.lang.RestFn.invoke (RestFn.java:439)
+    clojure.tools.reader$read_keyword.invokeStatic (reader.clj:360)
+    clojure.tools.reader$read_keyword.invoke (reader.clj:343)
+    clojure.tools.reader$read_STAR_.invokeStatic (reader.clj:889)
+    clojure.tools.reader$read_STAR_.invoke (reader.clj:870)
+    clojure.tools.reader$read_delimited.invokeStatic (reader.clj:195)
+    clojure.tools.reader$read_delimited.invoke (reader.clj:188)
+    clojure.tools.reader$read_vector.invokeStatic (reader.clj:226)
+    clojure.tools.reader$read_vector.invoke (reader.clj:222)
+    clojure.tools.reader$read_STAR_.invokeStatic (reader.clj:889)
+    clojure.tools.reader$read_STAR_.invoke (reader.clj:870)
+    clojure.tools.reader$read_delimited.invokeStatic (reader.clj:195)
+    clojure.tools.reader$read_delimited.invoke (reader.clj:188)
+    clojure.tools.reader$read_list.invokeStatic (reader.clj:208)
+    clojure.tools.reader$read_list.invoke (reader.clj:204)
+    clojure.tools.reader$read_STAR_.invokeStatic (reader.clj:889)
+    clojure.tools.reader$read_STAR_.invoke (reader.clj:870)
+    clojure.tools.reader$read_delimited.invokeStatic (reader.clj:195)
+    clojure.tools.reader$read_delimited.invoke (reader.clj:188)
+    clojure.tools.reader$read_list.invokeStatic (reader.clj:208)
+    clojure.tools.reader$read_list.invoke (reader.clj:204)
+    clojure.tools.reader$read_STAR_.invokeStatic (reader.clj:889)
+    clojure.tools.reader$read_STAR_.invoke (reader.clj:870)
+    clojure.tools.reader$read.invokeStatic (reader.clj:938)
+    clojure.tools.reader$read.invoke (reader.clj:915)
+    cljs.analyzer$forms_seq_STAR_$forms_seq___2070$fn__2071$fn__2072.invoke (analyzer.cljc:2656)
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.046 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: ajax.core, could not locate ajax/core.cljs, ajax/core.cljc, or Closure namespace "ajax.core" in file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.108 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.472 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.273 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Wrong number of args (0) passed to ajax.core/POST at line 34 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.293 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.273 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.297 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Map literal must contain an even number of forms on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 34, column 36
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.168 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Map literal must contain an even number of forms on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 34, column 45
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.161 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.263 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.262 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Map literal must contain an even number of forms on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 43, column 56
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.175 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 45, column 38
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.17 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.261 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.255 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.263 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.385 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Map literal must contain an even number of forms on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 43, column 30
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.162 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.275 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.26 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.259 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.292 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.281 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.233 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.238 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.25 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.246 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.231 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.239 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: Parameter declaration "POST" should be a vector at line 39 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 39, column 1
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.145 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.529 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.294 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.272 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.288 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.334 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.143 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Use of undeclared Var clj-forms.core/json at line 42 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.316 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Use of undeclared Var clj-forms.core/json at line 42 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.302 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Use of undeclared Var clj-forms.core/json at line 44 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.286 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.303 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Use of undeclared Var clj-forms.core/weight at line 43 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.27 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.269 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.251 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.285 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.271 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.285 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 26 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.291 seconds.[0m
