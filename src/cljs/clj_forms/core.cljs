@@ -40,9 +40,7 @@
        (.log js/console w)
        (POST "/addWeight"
                                {:params
-                                        {:message "Hello World!"
-                                         :user    "Bob"
-                                         :weight w}
+                                        {:weight w}
                                 :format :json
        :handler handler
        :error-handler error-handler}))

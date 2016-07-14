@@ -3,9 +3,10 @@
     [compojure.core :refer [GET defroutes routes POST]]
     [compojure.route :refer [not-found resources]]
     [hiccup.page :refer [include-js include-css html5]]
-    [ring.middleware.json :refer [wrap-json-response]]
+    [ring.middleware.json :as middleware]
     [ring.middleware.defaults :refer [wrap-defaults api-defaults]]
     [config.core :refer [env]]
+    [ring.util.response :refer [resource-response response]]
     [clojure.tools.logging :as log]))
 
 (def mount-target
@@ -32,13 +33,15 @@
 
 
 
-
-(defroutes site-routes
+(defroutes app-routes
            (GET "/" [] loading-page)
            (GET "/about" [] loading-page)
-           (POST "/addWeight" {body :body} (println (slurp body)))
+           (POST "/addWeight" req (println req) (response {:foo "bar"}))
   
   (resources "/")
   (not-found "Not Found"))
 
-(def app (routes (wrap-defaults site-routes api-defaults)))
+(def app  (-> app-routes
+              (middleware/wrap-json-body)
+              (middleware/wrap-json-response)
+              (wrap-defaults api-defaults)) )
