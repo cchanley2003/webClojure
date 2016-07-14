@@ -37,17 +37,24 @@
       (.log js/console (str "something bad happened: " status " " status-text)))
 
 (defn  submitWeight! [w]
-       (.log js/console w)
        (POST "/addWeight"
                                {:params {:weight w}
                                 :format :json
        :handler handler
        :error-handler error-handler}))
 
+
+(def lw (atom nil))
+
+(defn lastWeight [] (GET "/lastWeight" :handler (fn [response] (reset! lw (response "weight")))))
+
+
 (defn home-page []
   (let [weight (atom nil)]
+       (lastWeight)
     (fn []
       [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Weight Measurement App"]
+       [:p (str "Last weight was: " @lw)]
       [:form 
         [weight-form weight]
         [:input {:type "button" :value "Submit!" :on-click #(submitWeight! @weight)}]

@@ -31,15 +31,17 @@
      mount-target
      (include-js "/js/app.js")]))
 
+(defn updateNewWeight [body] (println (body "weight")))
+
 
 
 (defroutes app-routes
            (GET "/" [] loading-page)
            (GET "/about" [] loading-page)
-           (POST "/addWeight" req (println req) (response {:foo "bar"}))
-  
-  (resources "/")
-  (not-found "Not Found"))
+           (POST "/addWeight" req (updateNewWeight (req :body)) (response {:foo "bar"}))
+           (GET "/lastWeight" [] (response {:weight 210}))
+           (resources "/")
+           (not-found "Not Found"))
 
 (def app  (-> app-routes
               (middleware/wrap-json-body)
