@@ -39,8 +39,7 @@
 (defn  submitWeight! [w]
        (.log js/console w)
        (POST "/addWeight"
-                               {:params
-                                        {:weight w}
+                               {:params {:weight w}
                                 :format :json
        :handler handler
        :error-handler error-handler}))
