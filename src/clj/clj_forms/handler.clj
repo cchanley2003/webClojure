@@ -29,7 +29,7 @@
     (head)
     [:body {:class "body-container"}
      mount-target
-     (include-js "/js/app.js")]))
+     (include-js"http://code.highcharts.com/highcharts.js" "http://code.highcharts.com/modules/exporting.js" "/js/app.js" )]))
 
 (defn updateNewWeight [body] (println (body "weight")))
 

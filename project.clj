@@ -24,8 +24,8 @@
                   :exclusions [org.clojure/tools.reader]]]
 
   :plugins [[lein-environ "1.0.2"]
-            [lein-cljsbuild "1.1.1"]
-            [lein-ring "0.8.13"]
+            [lein-cljsbuild "1.1.1" :exclusions [org.clojure/clojure]]
+            [lein-ring "0.8.13" :exclusions [org.clojure/clojure]]
             [lein-asset-minifier "0.2.7"
              :exclusions [org.clojure/clojure]]]
 
@@ -57,7 +57,8 @@
              {:output-to "target/cljsbuild/public/js/app.js"
               :output-dir "target/uberjar"
               :optimizations :advanced
-              :pretty-print  false}}
+              :pretty-print  false
+              :externs ["externs.js"]}}
             :app
             {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
              :compiler
