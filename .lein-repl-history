@@ -1,2 +1,60 @@
 (+ 2 2)
 :quit
+(require '[clojure.java.jdbc :as sql])
+(sql/insert! "postgresql://localhost:5432/weight_data" :weights {:weight 198})
+(let [db-host "localhost"
+db-port 5432
+db-name "weight_data"]
+(def db (:classname "org.postgresql.Driver" 
+:subprotocol "postgresql"
+:subname (str "//" db-host ":" db-port "/" db-name)
+:user "app_user"
+(let [db-host "localhost"
+db-port 5432
+db-name "weight_data"]
+(def db {:classname "org.postgresql.Driver" ; must be in classpath
+           :subprotocol "postgresql"
+           :subname (str "//" db-host ":" db-port "/" db-name)
+           ; Any additional keys are passed to the driver
+           ; as driver-specific properties.
+           :user "app_user"
+:password "password"}))
+(with-connection db (with-query-results res ["select * from weights"] (dorun (map #(println %) rs))))
+(sql/with-connection db (with-query-results res ["select * from weights"] (dorun (map #(println %) rs))))
+(with-db-connection db (with-query-results res ["select * from weights"] (dorun (map #(println %) rs))))
+(sql/with-db-connection db (with-query-results res ["select * from weights"] (dorun (map #(println %) rs))))
+(sql/query db ["select * from weights"])
+db
+(sql/query db ["select * from weights"])
+(sql/query db ["select * from weights"] :row-fn #(% :weight))
+(sql/query db ["select * from weights"] :row-fn #(% :weight) :resultset-fn inc)
+(sql/query db ["select * from weights"] :row-fn #(% :weight) :resultset-fn in
+;
+)
+(sql/query db ["select * from weights"])
+ls
+:quit
+:exit
+(require '[clojure.java.jdbc :as sql])
+(def db {:classname "org.postgresql.Driver" ; must be in classpath
+           :subprotocol "postgresql"
+           :subname (str "//" db-host ":" db-port "/" db-name)
+           :user "app_user"
+:password "password"}))
+(let [db-host "localhost"
+db-port 5432
+db-name "weight_data"]
+(def db {:classname "org.postgresql.Driver" ; must be in classpath
+           :subprotocol "postgresql"
+           :subname (str "//" db-host ":" db-port "/" db-name)
+           :user "app_user"
+:password "password"}))
+(sql/query db ["select * from weights"])
+(sql/query db ["select * from weights"] :row-fn #(% :weight))
+sql/query
+(desc sql/query)
+(sql/query db ["select * from weights"] :row-fn #(% :weight))
+(sql/query db ["select * from weights"] {:row-fn #(% :weight)})
+(sql/query db ["select * from weights order by time desc limit 1"] {:row-fn #(% :weight)})
+(first (sql/query db ["select * from weights order by time desc limit 1"] {:row-fn #(% :weight)}))
+(read-string "10")

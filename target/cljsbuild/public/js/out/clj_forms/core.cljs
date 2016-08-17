@@ -9,6 +9,48 @@
 ;; Views
 
 
+(def chart-data [{:name "Year 1805"
+                  :data [107 31 635 203 2]}
+                 {:name "Year 1900"
+                  :data [133 156 947 408 6]}
+                 {:name "Year 2010"
+                  :data [973 914 4054 732 34]}])
+
+(def chart-config
+  {:chart {:type "bar"}
+   :title {:text "Historic World Population by Region"}
+   :subtitle {:text "Source: Wikipedia.org"}
+   :xAxis {:categories ["Africa" "America" "Asia" "Europe" "Oceania"]
+           :title {:text nil}}
+   :yAxis {:min 0
+           :title {:text "Population (millions)"
+                   :align "high"}
+           :labels {:overflow "justify"}}
+   :tooltip {:valueSuffix " millions"}
+   :plotOptions {:bar {:dataLabels {:enabled true}}}
+   :legend {:layout "vertical"
+            :align "right"
+            :verticalAlign "top"
+            :x -40
+            :y 100
+            :floating true
+            :borderWidth 1
+            :shadow true}
+   :credits {:enabled false}
+   :series chart-data
+   })
+
+(defn chart-did-mount [this]
+  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))
+
+(defn chart-render []
+  [:div {:style {:min-width "310px" :max-width "800px"
+                 :height "400px" :margin "0 auto"}}])
+
+(defn chart []
+  (reagent/create-class {:reagent-render chart-render
+                         :component-did-mount chart-did-mount}))
+
 (defn prompt-message
   "A prompt that will animate to help the user with a given input"
   [message]
@@ -54,12 +96,14 @@
        (lastWeight)
     (fn []
       [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Weight Measurement App"]
-       [:p (str "Last weight was: " @lw)]
+       [:p (str "Last weight: " @lw)]
       [:form 
         [weight-form weight]
         [:input {:type "button" :value "Submit!" :on-click #(submitWeight! @weight)}]
       ]
-       [:div "Weight is: " @weight]])))
+       [:div "Weight is: " @weight]
+       [chart]
+       ])))
 
 (defn current-page []
   [:div [(session/get :current-page)]])

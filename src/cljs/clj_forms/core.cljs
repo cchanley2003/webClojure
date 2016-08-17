@@ -9,6 +9,13 @@
 ;; Views
 
 
+(def chart-data [{:name "Year 1805"
+                  :data [107 31 635 203 2]}
+                 {:name "Year 1900"
+                  :data [133 156 947 408 6]}
+                 {:name "Year 2010"
+                  :data [973 914 4054 732 34]}])
+
 (def chart-config
   {:chart {:type "bar"}
    :title {:text "Historic World Population by Region"}
@@ -30,12 +37,7 @@
             :borderWidth 1
             :shadow true}
    :credits {:enabled false}
-   :series [{:name "Year 1805"
-             :data [107 31 635 203 2]}
-            {:name "Year 1900"
-             :data [133 156 947 408 6]}
-            {:name "Year 2008"
-             :data [973 914 4054 732 34]}]
+   :series chart-data
    })
 
 (defn chart-did-mount [this]
@@ -94,7 +96,7 @@
        (lastWeight)
     (fn []
       [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Weight Measurement App"]
-       [:p (str "Last weight was: " @lw)]
+       [:p (str "Last weight: " @lw)]
       [:form 
         [weight-form weight]
         [:input {:type "button" :value "Submit!" :on-click #(submitWeight! @weight)}]
