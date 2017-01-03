@@ -399,3 +399,45 @@ notifying browser that file changed:  out/clj_forms/core.js
 WARNING: Use of undeclared Var clj-forms.core/input-element at line 68 /Users/chanley/git/webClojure/src/cljs/clj_forms/core.cljs
 notifying browser that file changed:  out/clj_forms/core.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.432 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 62 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.383 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 62 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Use of undeclared Var clj-forms.core/weight at line 101 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.311 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Use of undeclared Var clj-forms.core/input-element at line 62 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+WARNING: Use of undeclared Var clj-forms.core/submitWeight! at line 98 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.304 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: Wrong number of args (1) passed to clj-forms.core/submitDrink! at line 111 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.271 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.243 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.252 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+WARNING: brand-form at line 85 is being replaced at line 89 /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.283 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.255 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.282 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.249 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.258 seconds.[0m

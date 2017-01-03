@@ -17,8 +17,8 @@
                   :data [973 914 4054 732 34]}])
 
 (def chart-config
-  {:chart {:type "bar"}
-   :title {:text "Historic World Population by Region"}
+  {:chart {:type "line"}
+   :title {:text "Consumption by Day"}
    :subtitle {:text "Source: Wikipedia.org"}
    :xAxis {:categories ["Africa" "America" "Asia" "Europe" "Oceania"]
            :title {:text nil}}
@@ -40,6 +40,19 @@
    :series chart-data
    })
 
+(defn input-element
+      "An input element which updates its value on change"
+      [id name type value in-focus]
+      [:input {:id id
+               :name name
+               :class "form-control"
+               :type type
+               :required ""
+               :value @value
+               :on-change #(reset! value (-> % .-target .-value))
+               :on-focus #(swap! in-focus not)
+               :on-blur #(swap! in-focus not)}])
+
 (defn chart-did-mount [this]
   (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))
 
@@ -51,12 +64,6 @@
   (reagent/create-class {:reagent-render chart-render
                          :component-did-mount chart-did-mount}))
 
-(defn prompt-message
-  "A prompt that will animate to help the user with a given input"
-  [message]
-  [:idv {:class "my-messages"}
-    [:div {:class "prompt message-animation"} [:p message]]])
-
 
 (defn input
   "Creates an input box and a prompt box that appears above the input when the input comes into focus."
@@ -67,9 +74,21 @@
        [:label label-value]
        [input-element input-name input-name input-type input-element-arg input-focus]])))
 
-(defn weight-form
-  [weight-atom]
-  (input "Weight (lbs):" "weight" "number" weight-atom))
+(defn ounces-form
+  [ounces-atom]
+  (input "Ounces:" "ounces" "number" ounces-atom))
+
+(defn abv-form
+      [abv-atom]
+      (input "ABV:" "abv" "number" abv-atom))
+
+(defn brand-form
+      [brand-atom]
+      (input "Brand:" "brand" "text" brand-atom))
+
+(defn name-form
+      [brand-atom]
+      (input "Name:" "name" "text" brand-atom))
 
 
 (defn handler [response]
@@ -78,30 +97,31 @@
 (defn error-handler [{:keys [status status-text]}]
       (.log js/console (str "something bad happened: " status " " status-text)))
 
-(defn  submitWeight! [w]
-       (POST "/addWeight"
-                               {:params {:weight w}
+(defn  submitDrink! [brand name ounces abv]
+       (POST "/addDrink"
+                               {:params {:ounces ounces
+                                         :abv abv
+                                         :brand brand
+                                         :name name}
                                 :format :json
        :handler handler
        :error-handler error-handler}))
 
 
-(def lw (atom nil))
-
-(defn lastWeight [] (GET "/lastWeight" :handler (fn [response] (reset! lw (response "weight")))))
-
-
 (defn home-page []
-  (let [weight (atom nil)]
-       (lastWeight)
+  (let [ounces (atom nil)
+        abv    (atom nil)
+        brand (atom nil)
+        name (atom nil)]
     (fn []
-      [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Weight Measurement App"]
-       [:p (str "Last weight: " @lw)]
-      [:form 
-        [weight-form weight]
-        [:input {:type "button" :value "Submit!" :on-click #(submitWeight! @weight)}]
+      [:div {:class "form-wrapper"} [:h2 "Welcome to Chad's Beer Consumption App"]
+      [:form
+       [brand-form brand]
+       [name-form name]
+       [ounces-form ounces]
+       [abv-form abv]
+       [:input {:type "button" :value "Add Beer!" :on-click #(submitDrink! @brand @name @ounces @abv)}]
       ]
-       [:div "Weight is: " @weight]
        [chart]
        ])))
 
@@ -109,18 +129,7 @@
   [:div [(session/get :current-page)]])
 
 
-(defn input-element
-  "An input element which updates its value on change"
-  [id name type value in-focus]
-  [:input {:id id
-           :name name
-           :class "form-control"
-           :type type
-           :required ""
-           :value @value
-           :on-change #(reset! value (-> % .-target .-value))
-           :on-focus #(swap! in-focus not)
-           :on-blur #(swap! in-focus not)}])
+
 
 ;; -------------------------
 ;; Routes

@@ -3,7 +3,13 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-
+ :mirrors {"central" {:name "Ibiblio"
+                       :url "http://localhost:8080/repository/internal"
+                       :checksum :ignore}
+            #"clojars" {:name "Internal nexus"
+                        :url "http://localhost:8080/repository/internal"
+                        :repo-manager true
+                        :checksum :ignore}}  
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [ring-server "0.4.0"]
                  [reagent "0.5.1"
