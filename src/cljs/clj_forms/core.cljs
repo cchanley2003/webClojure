@@ -9,24 +9,25 @@
 ;; Views
 
 
-(def chart-data [{:name "Year 1805"
-                  :data [107 31 635 203 2]}
-                 {:name "Year 1900"
-                  :data [133 156 947 408 6]}
-                 {:name "Year 2010"
-                  :data [973 914 4054 732 34]}])
+(def chart-data [{:name "Consumption"
+                  :data [[(js/Date.UTC 2017 0 1) 10]
+                         [(js/Date.UTC 2017 0 2) 12]
+                         [(js/Date.UTC 2017 0 3) 24]
+                         [(js/Date.UTC 2017 0 4) 10]
+                         [(js/Date.UTC 2017 0 5) 3]
+                         ]}]
+)
 
 (def chart-config
   {:chart {:type "line"}
    :title {:text "Consumption by Day"}
-   :subtitle {:text "Source: Wikipedia.org"}
-   :xAxis {:categories ["Africa" "America" "Asia" "Europe" "Oceania"]
-           :title {:text nil}}
+   :xAxis {:type "datetime"
+           :title "Date"}
    :yAxis {:min 0
-           :title {:text "Population (millions)"
+           :title {:text "Ounces"
                    :align "high"}
            :labels {:overflow "justify"}}
-   :tooltip {:valueSuffix " millions"}
+   :tooltip {:valueSuffix " ounces"}
    :plotOptions {:bar {:dataLabels {:enabled true}}}
    :legend {:layout "vertical"
             :align "right"

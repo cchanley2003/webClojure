@@ -441,3 +441,31 @@ notifying browser that file changed:  out/clj_forms/core.js
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
 notifying browser that file changed:  out/clj_forms/core.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.258 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.251 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.255 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 14, column 2
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.125 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 19, column 2
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.105 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 19, column 2
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.12 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mERROR: Unmatched delimiter ) on file /Users/kelli/git/webClojure/src/cljs/clj_forms/core.cljs, line 19, column 2
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.111 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.272 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+notifying browser that file changed:  out/clj_forms/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.243 seconds.[0m
