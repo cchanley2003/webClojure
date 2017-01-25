@@ -5,7 +5,7 @@ pom.xml.asc
 *jar
 /lib/
 /classes/
-/target/
+target/
 /checkouts/
 .lein-deps-sum
 .lein-repl-history
@@ -13,11 +13,5 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 figwheel_server.log
-
-.idea/.name
-.idea/compiler.xml
-.idea/copyright/
-.idea/encodings.xml
-.idea/libraries/
-.idea/misc.xml
-.idea/workspace.xml
+.idea/
+webClojure.iml
