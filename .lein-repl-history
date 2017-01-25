@@ -58,3 +58,4 @@ sql/query
 (sql/query db ["select * from weights order by time desc limit 1"] {:row-fn #(% :weight)})
 (first (sql/query db ["select * from weights order by time desc limit 1"] {:row-fn #(% :weight)}))
 (read-string "10")
+quit

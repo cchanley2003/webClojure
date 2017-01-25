@@ -3,13 +3,13 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
- :mirrors {"central" {:name "Ibiblio"
-                       :url "http://localhost:8080/repository/internal"
-                       :checksum :ignore}
-            #"clojars" {:name "Internal nexus"
-                        :url "http://localhost:8080/repository/internal"
-                        :repo-manager true
-                        :checksum :ignore}}  
+; :mirrors {"central" {:name "Ibiblio"
+;                       :url "http://localhost:8080/repository/internal"
+;                       :checksum :ignore}
+;            #"clojars" {:name "Internal nexus"
+;                        :url "http://localhost:8080/repository/internal"
+;                        :repo-manager true
+;                        :checksum :ignore}}  
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [ring-server "0.4.0"]
                  [reagent "0.5.1"
@@ -38,11 +38,11 @@
              :exclusions [org.clojure/clojure]]]
 
   :ring {:handler clj-forms.handler/app
-         :uberwar-name "clj_forms.war"}
+         :uberwar-name "beer.war"}
 
   :min-lein-version "2.5.0"
 
-  :uberjar-name "clj_forms.jar"
+  :uberjar-name "beer.jar"
 
   :main clj-forms.server
 
