@@ -15,3 +15,4 @@ target/
 figwheel_server.log
 .idea/
 webClojure.iml
+resources/public/css/site.min.css
